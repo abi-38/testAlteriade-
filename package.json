@@ -1,0 +1,22 @@
+{
+  "name": "testalteriade-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abi-38/testAlteriade-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abi-38/testAlteriade-/issues"
+  },
+  "homepage": "https://github.com/abi-38/testAlteriade-#readme",
+  "dependencies": {
+    "sass": "^1.32.4"
+  }
+}
