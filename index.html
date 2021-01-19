@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarrasin</title>
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header class="header">
@@ -32,8 +34,130 @@
           </nav>
     </header>
     <main>
-        <h2>Nos actualités</h2>
-
+        <section>
+            <div>
+                <div>
+                    <img src="./public/img/img1.png" alt="image1">
+                </div>
+                <div>
+                    <h2>Plateaux</h2>
+                    <p>Pré-commandez directement en ligne</p>
+                </div>
+                <div>
+                    <img src="./public/img/menuIcone.png" alt="menuIcone">
+                    <h2>Découvrez les cartes du mois</h2>
+                    <p>Reçevez régulièrement les nouveautés par email : </p>
+                    <input type="email" name="" id="" placeholder="Adresse email">
+                    <button>Recevez les prochaines cartes</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./public/img/img2.png" alt="image2">
+                </div>
+                <div>
+                    <h2>Accueil et pause-café</h2>
+                </div>
+                <div>
+                    <h2>Buffets</h2>
+                </div>
+                <div>
+                    <h2>Cocktails</h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./public/img/img3.png" alt="image3">
+                </div>
+                <div>
+                    <h2>Location de salles</h2>
+                </div>
+            </div>
+            <div>
+                <img src="./public/img/img5.png" alt="image5">
+                <div>
+                    <h2>Demandez votre devis</h2>
+                    <p>Nous vous répondrons rapidement avec une proposition personnalisée.</p>
+                </div>
+                <button>Contactez-nous</button>
+            </div>
+        </section>
+        <section>
+            <h2>Nos actualités</h2>
+            <div dir="rtl" class="single-item-rtl">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
+            
+        </section>
+        <section>
+            <img src="./public/img/bulle1.png" alt="">
+            <img src="./public/img/bulle2.png" alt="">
+            <img src="./public/img/bulle3.png" alt="">
+            <h2>Nos engagements</h2>
+            <article>
+                <img src="" alt="">
+                <h3>Des produits</h3>
+                <h4>Locaux</h4>
+                <p>Lorem ipsum dolor sit amet, consecter adipiscing elit. Aenean eu enim justo.</p>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h4>Réfléchis</h4>
+                <p>Maecenas tincidunt, velit ac porttitor pulvinar, tortor  facilisis libero, vitae commodo nunc quam et ligula.</p>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h4>Bio</h4>
+                <p>Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Vestibulum aliquam hendrerit.</p>
+            </article>
+            <article>
+                <img src="" alt="">
+                <h3>Des matériaux</h3>
+                <h4>Recyclés</h4>
+                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer id nisi nec nulla luctus lacinia turpis. </p>
+            </article>
+        </section>
     </main>
+    <footer>
+        <div>
+            <img src="./public/img/logoEspaceSarrazin.png" alt="logoEspaceSarrazin">
+            <ul>
+                <li><a href="#">Conditions de commande</a></li>
+                <li><a href="#">Allergènes</a></li>
+                <li><a href="#">Carte des boissons</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Plan du site</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="./public/img/LogoAdapei69Blanc.png" alt="LogoAdapei69Blanc">
+            <p>Avec l’appui d’OSEAT, le réseau commercial des Esat et Entreprises adaptées de l’Adapei 69.</p>
+        </div>
+        <div>
+            <img src="./public/img/logoOseat2019Blanc.png" alt="logoOseat2019Blanc">
+            <div>
+                <img src="./public/img/facebookIconeBleu.png" alt="facebookIconeBleu">
+                <img src="./public/img/linkedinIconeBleu.png" alt="linkedinIconeBleu">
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('.single-item-rtl').slick({
+            rtl: true
+          });
+        });
+    </script>
+
 </body>
 </html>
