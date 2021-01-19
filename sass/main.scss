@@ -1,6 +1,6 @@
-h1 {
-    font-size: 120px;
-}
-h2 {
-    font: outline;
-}
+@import "./utils/variables";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./pages/accueil.scss";

@@ -1,9 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "DINBlackAlternate";
+  src: url("../../public/typo/DINBlackAlternate.ttf") format("truetype");
+  font-family: "DINLightAlternate";
+  src: url("../../public/typo/DINLightAlternate.ttf") format("truetype");
+}
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("typo/Raleway-Regular.ttf") format("truetype");
+  font-family: "RalewayBold";
+  src: url("typo/Raleway-Bold.ttf") format("truetype");
+  font-family: "RalewayItalic";
+  src: url("typo/Raleway-Italic.ttf") format("truetype");
+}
 h1 {
-  font-size: 120px;
+  font-family: "DINLightAlternate", Arial, serif;
+  color: #2b2b2a;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font: outline;
+  font-family: "RalewayBold", Arial, serif;
+  color: #00799b;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-family: "DINBlackAlternate", Arial, serif;
+  color: #8fc89a;
+  font-size: 1.125rem;
+}
+
+body {
+  font-family: "SourceSansPro-Regular", Arial, serif;
+  color: #2b2b2a;
+  font-size: 1rem;
+}
+
+a.nav__link {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #2b2b2a;
+  font-size: 1.313rem;
+}
+
+.header {
+  background-image: url(../../public/img/imgHeader.png);
+  background-size: cover;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__container {
+  background-image: url(../../public/img/oval.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 285px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__container__logo {
+  width: 13vw;
+}
+.header__container__p {
+  padding-top: 25px;
+  color: #00ada9;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: rgba(242, 242, 242, 0.9);
+  padding-right: 11vw;
+  padding-left: 11vw;
+}
+.nav__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav__link__img {
+  width: 0.5vw;
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
