@@ -27,63 +27,72 @@
                 <p>Location de salles</p>
                 <img class="nav__link__img" src="./public/img/ovalPetitNoir.png" alt="">
             </a>
-            <a class="nav__link" href="#">
+            <a class="nav__link nav__link--active" href="#">
                 <p>Demandez un devis</p>
                 <img class="nav__link__img" src="./public/img/ovalPetitNoir.png" alt="">
             </a>
           </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <div>
+        <section class="section">
+            <div class="container container--right">
+                <div class="vignette vignette--image">
                     <img src="./public/img/img1.png" alt="image1">
                 </div>
-                <div>
+                <div class="vignette vignette--verte">
                     <h2>Plateaux</h2>
                     <p>Pré-commandez directement en ligne</p>
                 </div>
-                <div>
-                    <img src="./public/img/menuIcone.png" alt="menuIcone">
-                    <h2>Découvrez les cartes du mois</h2>
+                <div class="vignette-carteDuMois">
+                    <div class="vignette-carteDuMois__container">
+                        <img src="./public/img/menuIcone.png" alt="menuIcone">
+                        <h2>Découvrez <br> les cartes du mois</h2>
+                    </div>
                     <p>Reçevez régulièrement les nouveautés par email : </p>
-                    <input type="email" name="" id="" placeholder="Adresse email">
-                    <button>Recevez les prochaines cartes</button>
+                    <div class="vignette-carteDuMois__container2">
+                        <input type="email" name="" id="" placeholder="Adresse email">
+                        <button class="btn">Recevez les prochaines cartes</button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="container container--left">
+                <div class="vignette-image">
                     <img src="./public/img/img2.png" alt="image2">
                 </div>
-                <div>
+                <div class="vignette vignette--bleuTurquoise">
                     <h2>Accueil et pause-café</h2>
                 </div>
-                <div>
+                <div class="vignette vignette--bleuCanard">
                     <h2>Buffets</h2>
                 </div>
-                <div>
+                <div class="vignette vignette--jaune">
                     <h2>Cocktails</h2>
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="container">
+                <div class="vignette-grandeImage">
                     <img src="./public/img/img3.png" alt="image3">
                 </div>
-                <div>
+                <div class="vignette vignette--gris">
                     <h2>Location de salles</h2>
                 </div>
             </div>
-            <div>
-                <img src="./public/img/img5.png" alt="image5">
-                <div>
-                    <h2>Demandez votre devis</h2>
-                    <p>Nous vous répondrons rapidement avec une proposition personnalisée.</p>
+            <div class="container">
+                <div class="vignette-devis">
+                    <img src="./public/img/img5.png" alt="image5">
+                    <div>
+                        <h2>Demandez votre devis</h2>
+                        <p>Nous vous répondrons rapidement avec une proposition personnalisée.</p>
+                    </div>
+                    <button class="btn btn--bleu">Contactez-nous</button>
                 </div>
-                <button>Contactez-nous</button>
             </div>
         </section>
-        <section>
-            <h2>Nos actualités</h2>
+        <section class="section">
+            <div class="section__container--point">
+                <h1>NOS ACTUALITES</h2>
+                <img class="section__container__img" src="./public/img/ovalPetitNoir.png" alt="">
+            </div>
             <div dir="rtl" class="single-item-rtl">
                 <div>your content</div>
                 <div>your content</div>
@@ -91,11 +100,14 @@
             </div>
             
         </section>
-        <section>
+        <section class="section">
             <img src="./public/img/bulle1.png" alt="">
             <img src="./public/img/bulle2.png" alt="">
             <img src="./public/img/bulle3.png" alt="">
-            <h2>Nos engagements</h2>
+            <div class="section__container--point">
+                <h1>NOS ENGAGEMENTS</h2>
+                <img class="section__container__img" src="./public/img/ovalPetitNoir.png" alt="">
+            </div>
             <article>
                 <img src="" alt="">
                 <h3>Des produits</h3>
@@ -122,7 +134,7 @@
     </main>
     <footer>
         <div>
-            <img src="./public/img/logoEspaceSarrazin.png" alt="logoEspaceSarrazin">
+            <img src="./public/img/logoEspaceSarrazinBlanc.png" alt="logoEspaceSarrazinBlanc">
             <ul>
                 <li><a href="#">Conditions de commande</a></li>
                 <li><a href="#">Allergènes</a></li>
