@@ -1,17 +1,18 @@
 @font-face {
-    font-family: 'DINBlackAlternate';
-    src: url('../../public/typo/DINBlackAlternate.ttf') format('truetype');
     font-family: 'DINLightAlternate';
     src: url('../../public/typo/DINLightAlternate.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'DINBlackAlternate';
+    src: url('../../public/typo/DINBlackAlternate.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../../public/typo/Raleway-Bold.ttf') format('truetype');
+}
 @font-face {
     font-family: 'RalewayRegular';
-    src: url('typo/Raleway-Regular.ttf') format('truetype');
-    font-family: 'RalewayBold';
-    src: url('typo/Raleway-Bold.ttf') format('truetype');
-    font-family: 'RalewayItalic';
-    src: url('typo/Raleway-Italic.ttf') format('truetype');
+    src: url('../../public/typo/Raleway-Regular.ttf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
@@ -22,7 +23,7 @@ h1 {
     font-size: 2.5rem;
 }
 h2 {
-    font-family: 'RalewayBold', Arial, serif;
+    font-family: 'DINBlackAlternate', Arial, serif;
     color: $colour-secondary;
     font-size: 1.75rem;
 }
@@ -31,8 +32,15 @@ h3 {
     color: $colour-accent;
     font-size: 1.125rem;
 }
-body {
-    font-family: 'SourceSansPro-Regular', Arial, serif;
+h4 {
+    font-family: 'DINBlackAlternate', Arial, serif;
+    font-weight: bolder;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    color: #797979;
+}
+body, p {
+    font-family: 'Source Sans Pro', sans-serif;
     color: $colour-third;
     font-size: 1rem;
 }
