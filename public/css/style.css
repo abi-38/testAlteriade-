@@ -132,6 +132,15 @@ body {
 .section .container--left {
   justify-content: start;
 }
+.section .container--titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section .container--titre > h1 {
+  padding-bottom: 20px;
+}
 
 .vignette {
   display: flex;
@@ -261,6 +270,95 @@ body {
   margin-left: 90px;
 }
 
+#slideshow {
+  position: relative;
+  padding-top: 60px;
+}
+#slideshow .container.container--slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  top: 129px;
+  align-items: center;
+}
+#slideshow .container.container--slider > h1 {
+  padding-bottom: 20px;
+  color: white;
+}
+#slideshow > h1 {
+  position: absolute;
+  left: 40%;
+  top: 55px;
+  z-index: 1;
+  color: white;
+}
+#slideshow .slider {
+  position: relative;
+}
+#slideshow .slider .slider_items {
+  background-size: cover;
+  height: 500px;
+}
+#slideshow .slider .slider_items#diapoUne {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee1.png);
+}
+#slideshow .slider .slider_items#diapoDeux {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee2.png);
+}
+#slideshow .slider .slider_items_reseaux {
+  display: flex;
+  justify-content: end;
+}
+#slideshow .slider .slider_items_reseaux > img.iconeReseau {
+  width: 3vw;
+  padding-right: 15px;
+}
+#slideshow .slider .slider_items > div {
+  width: 38vw;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+  padding: 10px;
+  margin-left: 776px;
+  margin-top: 50px;
+}
+#slideshow .slider .slider_items > div > button {
+  margin-left: 275px;
+  margin-bottom: 44px;
+}
+#slideshow .slider .slider_items > div > p, #slideshow .slider .slider_items > div h2 {
+  color: white;
+}
+#slideshow .slider div.slider_items {
+  width: 100vw;
+  height: 500px;
+}
+#slideshow .slider div.slider_items img {
+  width: 100vw;
+  height: auto;
+}
+
+img.priv_arrow.slick-arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 332px;
+  left: 82vw;
+  z-index: 1;
+}
+
+img.next_arrow.slick-arrow {
+  cursor: pointer;
+  position: absolute;
+  bottom: 332px;
+  left: 89vw;
+  z-index: 1;
+}
+
 input {
   margin-top: 10px;
   margin-left: 30px;
@@ -286,6 +384,9 @@ input {
 }
 .btn--bleu {
   background-color: #00799b;
+}
+.btn--vert {
+  background-color: #00ada9;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -81,6 +81,15 @@
         &--left {
             justify-content: start;
         }
+        &--titre {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            > h1 {
+                padding-bottom: 20px;
+            }
+        }
     }
 }
 .vignette {
@@ -207,6 +216,94 @@
     }
 }
 
+#slideshow {
+    position: relative;
+    padding-top: 60px;
+    .container.container--slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        position: absolute;
+        width: 100vw;
+        top: 129px;
+        align-items: center;
+        > h1 {
+            padding-bottom: 20px;
+            color: white;
+        }
+    }
+    > h1 {
+        position: absolute;
+        left: 40%;
+        top: 55px;
+        z-index: 1;
+        color: white;
+    }
+    .slider {
+        position: relative;
+        .slider_items {
+            &#diapoUne {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee1.png);
+            }
+            &#diapoDeux {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee2.png);
+            }
+            &_reseaux {
+                display: flex;
+                justify-content: end;
+                > img.iconeReseau {
+                    width: 3vw;
+                    padding-right: 15px;
+                }
+            }
+            background-size: cover;
+            height:500px;
+            > div {
+                width: 38vw;
+                height: 395px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: end;
+                padding: 10px;
+                margin-left: 776px;
+                margin-top: 50px;
+                > button {
+                    margin-left: 275px;
+                    margin-bottom: 44px;
+                }
+                > p, h2 {
+                    color: white;
+                }
+            }
+        }
+        div.slider_items {
+            width: 100vw;
+            height: 500px;
+            img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+    }
+}
+
+img.priv_arrow.slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 332px;
+    left: 82vw;
+    z-index: 1;
+}
+img.next_arrow.slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 332px;
+    left: 89vw;
+    z-index: 1;
+}
+
 input {
     margin-top: 10px;
     margin-left: 30px;
@@ -230,5 +327,8 @@ input {
     font-size: 1.12rem;
     &--bleu {
         background-color: $colour-secondary;
+    }
+    &--vert {
+        background-color: $colour-primary;
     }
 }
