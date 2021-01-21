@@ -11,6 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
 </head>
 <body>
+    <!--
+    <div  class="lightbox">
+        <div class="lightbox__content">
+            <div class="lightbox__content__cross">c</div>
+            <p> Conformément aux dispositions des articles 6-III et 19 de la loi pour la Confiance dans l’économie Numérique, nous vous informons que :
+                <br>
+                Site internet créé et hébergé sur CmonSite.fr
+                <br>
+                www.morganetraiteur.com est édité par :
+                <br>
+                morgane traiteur
+                815 chemin de grange neuve
+                38780 estrablin
+            </p>
+        </div>
+    </div>-->
     <!--commenter-->
     <header class="header">
         <div class="header__container">
@@ -42,8 +58,8 @@
     </header>
     <main>
         <section class="section">
-            <div class="container container--right"> <!--section__container--right-->
-                <div class="vignette vignette--image"> <!--section__container__vignette--image-->
+            <div class="section__container section__container--right">
+                <div class="vignette vignette--image">
                     <img src="./public/img/img1.png" alt="image1">
                 </div>
                 <div class="vignette vignette--verte">
@@ -57,12 +73,12 @@
                     </div>
                     <p>Reçevez régulièrement les nouveautés par email : </p>
                     <div class="vignette-carteDuMois__container2">
-                        <input type="email" name="" id="" placeholder="Adresse email">
+                        <input type="email" name="input" placeholder="Adresse email">
                         <button class="btn">Recevez les prochaines cartes</button>
                     </div>
                 </div>
             </div>
-            <div class="container container--left">
+            <div class="section__container section__container--left">
                 <div class="vignette-image">
                     <img src="./public/img/img2.png" alt="image2">
                 </div>
@@ -76,7 +92,7 @@
                     <h2>Cocktails</h2>
                 </div>
             </div>
-            <div class="container">
+            <div class="section__container">
                 <div class="vignette-grandeImage">
                     <img src="./public/img/img3.png" alt="image3">
                 </div>
@@ -84,8 +100,8 @@
                     <h2>Location de salles</h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="vignette-devis">
+            <div class="container-devis">
+                <div class="container-devis__vignette-devis">
                     <img src="./public/img/img5.png" alt="image5">
                     <div>
                         <h2>Demandez votre devis</h2>
@@ -105,7 +121,7 @@
                     <div>
                         <button class="btn btn--vert">Voir toutes les actualitées</button>
                         <p>09 / 2020</p>
-                        <h2>La nouveauté dans les plateaux repas : la formule Nomade !</h2>
+                        <h2>La nouveaute dans les plateaux repas : la formule Nomade !</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. Mauris malesuada nisi sit amet augue accumsan tincidunt. Maecenas tincidunt, velit ac porttitor pulvinar… <em>Lire la suite</em></p>
                         <br>
                         <p>Partager l’actu sur : </p>
@@ -130,7 +146,7 @@
             <img class="section__bulle--un" src="./public/img/bulle1.png" alt="">
             <img class="section__bulle--deux" src="./public/img/bulle2.png" alt="">
             <img class="section__bulle--trois" src="./public/img/bulle3.png" alt="">
-            <div class="container container--titre">
+            <div class="section__container section__container--titre">
                 <h1>NOS ENGAGEMENTS</h1>
                 <img class="section__container__img" src="./public/img/ovalPetitNoir.png" alt="">
             </div>
@@ -167,7 +183,6 @@
                 <li><a href="#">Conditions de commande</a></li>
                 <li><a href="#">Allergènes</a></li>
                 <li><a href="#">Carte des boissons</a></li>
-                <br>
                 <li><a href="#">Actualités</a></li>
                 <li><a href="#">Plan du site</a></li>
                 <li><a href="#">Mentions légales</a></li>
@@ -188,10 +203,10 @@
     </footer>
 
     <!--Liens slick js-->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
     
-    <script type="text/javascript" src="./public/js/js.js"></script>
+    <script src="./public/js/js.js"></script>
 
 </body>
 </html>

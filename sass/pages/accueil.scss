@@ -1,6 +1,6 @@
 .section {
     padding-top: 60px;
-    .container {
+    &__container {
         display: flex;
         padding-bottom: 30px;
         justify-content: center;
@@ -90,6 +90,10 @@
     &--gris {
         background-color: $colour-invalid;
     }
+    &:hover {
+        background-color: red;
+        opacity: 0.5;
+    }
 }
 .vignette-carteDuMois {
     width: 49vw;
@@ -117,6 +121,10 @@
     &__container2 {
         display: flex;
     }
+    &:hover {
+        background-color: red;
+        opacity: 0.5;
+    }
 }
 .vignette-image {
     width: 27.5vw;
@@ -126,10 +134,14 @@
     overflow: hidden;
     position: relative;
     > img {
-        width: 100%;
+        width: 102%;
         object-fit: cover;
         position: absolute;
         top: -26px;
+    }
+    &:hover {
+        background-color: red;
+        opacity: 0.5;
     }
 }
 .vignette-grandeImage {
@@ -146,116 +158,38 @@
         position: absolute;
         top: -180px;
     }
+    &:hover {
+        background-color: red;
+        opacity: 0.5;
+    }
 }
-.vignette-devis {
-    width: 83vw;
-    height: 118px;
-    margin-right: 2vw;
-    margin-left: 37px;
-    border-radius: 10px;
-    background-color: #f1f0f0;
-    overflow: hidden;
+.container-devis {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    > img {
-        position: absolute;
-        top: -40px;
-        left: -108px;
-    }
-    > div {
-        margin-left: 90px;
-    }
-}
-
-#slideshow {
-    position: relative;
-    padding-top: 60px;
-    .container.container--slider {
+    justify-content: center;
+    &__vignette-devis {
+        width: 83vw;
+        height: 118px;
+        margin-right: 2vw;
+        margin-left: 37px;
+        border-radius: 10px;
+        background-color: #f1f0f0;
+        overflow: hidden;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        z-index: 1;
-        position: absolute;
-        width: 100vw;
-        top: 129px;
+        justify-content: space-around;
         align-items: center;
-        > h1 {
-            padding-bottom: 20px;
-            color: white;
-        }
-    }
-    > h1 {
-        position: absolute;
-        left: 40%;
-        top: 55px;
-        z-index: 1;
-        color: white;
-    }
-    .slider {
         position: relative;
-        .slider_items {
-            &#diapoUne {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee1.png);
-            }
-            &#diapoDeux {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee2.png);
-            }
-            &_reseaux {
-                display: flex;
-                justify-content: end;
-                > img.iconeReseau {
-                    width: 3vw;
-                    padding-right: 15px;
-                }
-            }
-            background-size: cover;
-            height:500px;
-            > div {
-                width: 38vw;
-                height: 395px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                text-align: end;
-                padding: 10px;
-                margin-left: 776px;
-                margin-top: 50px;
-                > button {
-                    margin-left: 275px;
-                    margin-bottom: 44px;
-                }
-                > p, h2 {
-                    color: white;
-                }
-            }
+        > img {
+            position: absolute;
+            top: -40px;
+            left: -108px;
         }
-        div.slider_items {
-            width: 100vw;
-            height: 500px;
-            img {
-                width: 100vw;
-                height: auto;
-            }
+        > div {
+            margin-left: 90px;
         }
     }
 }
 
-img.priv_arrow.slick-arrow {
-    cursor: pointer;
-    position: absolute;
-    bottom: 332px;
-    left: 82vw;
-    z-index: 1;
-}
-img.next_arrow.slick-arrow {
-    cursor: pointer;
-    position: absolute;
-    bottom: 332px;
-    left: 89vw;
-    z-index: 1;
-}
+
 
 .div-engagement {
     display: flex;
@@ -288,7 +222,33 @@ img.next_arrow.slick-arrow {
 }
 
 
-
+.lightbox {
+    position: absolute;
+    width: 100vw;
+    height: 3045px;
+    background-color: rgba(0, 0, 0, 0.548);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+        width: 45vw;
+        height: auto;
+        background-color: white;
+        padding: 60px;
+        border-radius: 20px;
+        position: relative;
+        &__cross {
+            width: 10vw;
+            height: 10vw;
+            display: block;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
 
 input {
     margin-top: 10px;
@@ -298,4 +258,10 @@ input {
     height: 45px;
     border-radius: 22px;
     border: 1px solid white;
+}
+
+@media (min-width: 1700px){
+    .header__container > img {
+        width: 10vw;
+    }
 }

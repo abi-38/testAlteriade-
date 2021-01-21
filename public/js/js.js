@@ -5,18 +5,6 @@ $(document).ready(() => {
   });
 });
 
-/*
-var positionElementInPage = $('.nav-stick').offset().top;
-$(window).scroll(function() {
-  if ($(this).scrollTop() >= positionElementInPage) {
-  // fixed
-  $('.nav-stick').addClass("floatable");
-  } else {
-  // relative
-  $('.nav-stick').removeClass("floatable");
-  }
-});*/
-
 $(".nav-stick").hide();
 
 $(function () {
@@ -29,3 +17,16 @@ $(function () {
   })
 });   
 
+/*
+let bodyELt = document.getElementsByTagName('body');
+
+
+  let crossElt = document.getElementsByClassName('lightbox__content__cross');
+  let lightboxElt = document.getElementsByClassName('lightbox');
+
+  crossElt.addEventListener('click', function (event) {
+    preventDefault(event);
+    body.removeChild(lightboxElt);
+    console.log("salut");
+  });
+  */

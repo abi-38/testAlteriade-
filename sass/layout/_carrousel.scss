@@ -1,0 +1,90 @@
+#slideshow {
+    position: relative;
+    padding-top: 60px;
+    .container.container--slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        position: absolute;
+        width: 100vw;
+        top: 129px;
+        align-items: center;
+        > h1 {
+            padding-bottom: 20px;
+            color: white;
+        }
+    }
+    > h1 {
+        position: absolute;
+        left: 40%;
+        top: 55px;
+        z-index: 1;
+        color: white;
+    }
+    .slider {
+        position: relative;
+        .slider_items {
+            &#diapoUne {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee1.png);
+            }
+            &#diapoDeux {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee2.png);
+            }
+            &_reseaux {
+                display: flex;
+                justify-content: end;
+                > img.iconeReseau {
+                    width: 3vw;
+                    padding-right: 15px;
+                }
+            }
+            background-size: cover;
+            height:500px;
+            > div {
+                height: 395px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: end;
+                padding: 10px;
+                margin-right: 6vw;
+                margin-top: 50px;
+                align-items: end;
+                margin-left: 45vw;
+                > button {
+                    margin-bottom: 60px;
+                }
+                > p, h2 {
+                    color: white;
+                }
+                h2 {
+                    margin-left: 9vw;
+                }
+            }
+        }
+        div.slider_items {
+            width: 100vw;
+            height: 500px;
+            img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+    }
+}
+
+img.priv_arrow.slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 332px;
+    left: 83vw;
+    z-index: 1;
+}
+img.next_arrow.slick-arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 332px;
+    left: 90vw;
+    z-index: 1;
+}
