@@ -1,74 +1,3 @@
-.header {
-    background-image: url(../../public/img/imgHeader.png);
-    background-size: cover;
-    height:700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    &__container {
-        background-image: url(../../public/img/oval.png);
-        background-repeat: no-repeat;
-        background-position: center top;
-        height: 285px;
-        padding-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        > img {
-            width: 13vw;
-        }
-        > p {
-            padding-top: 25px;
-            color: $colour-primary;
-            font-weight: bold;
-        }
-    }
-}
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 90px;
-    background-color: rgba(242, 242, 242, 0.9);
-    padding-right: 11vw;
-    padding-left: 11vw;
-    &__link {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &__img {
-            width: 0.5vw;
-            padding-top: 10px;
-        }
-        > p {
-            font-size: 1.313rem;
-            color: $colour-third;
-        }
-        &--active {
-            font-family: 'SourceSansPro-Bold', sans-serif;
-            padding-bottom: 16px;
-            > img {
-                display: none;
-            }
-            > p {
-                color: $colour-primary;
-                position: relative;
-                &::after {
-                    background-color: $colour-primary;
-                    content: "";
-                    height: 7px;
-                    border-radius: 10px;
-                    opacity: 1;
-                    position: absolute;
-                    right: 58px;
-                    top: 36px;
-                    width: 60px;
-                }
-            }
-        }
-    }
-}
 .section {
     padding-top: 60px;
     .container {
@@ -359,65 +288,7 @@ img.next_arrow.slick-arrow {
 }
 
 
-.footer {
-    background-color: $colour-third;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 270px;
-    &__div {
-        display: flex;
-        align-items: center;
-        > p, > a {
-            color: white;
-        }
-        &__ul {
-            padding-left: 30px;
-            border-left: 1px solid white;
-            > li {
-                list-style: none;
-                > a {
-                    font-family: 'RalewayBold';
-                    font-size: 0.875rem;
-                    text-decoration: none;
-                    color: white;
-                }
-            }
-        }
-        &--moyenneTaille {
-            width: 24vw;
-            > img {
-                width: auto;
-                height: 95px;
-                padding-right: 30px;
-            }
-        }
-        &--grandeTaille {
-            width: 34vw;
-            > img {
-                width: auto;
-                height: 60px;
-                padding-right: 30px;
-            }
-            > p {
-                font-family: 'RalewayRegular';
-                font-size: 0.875rem;
-            }
-        }
-        &--petiteTaille {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: end;
-            width: 11vw;
-            height: 140px;
-            > div > img {
-                padding-left: 15px;
-            }
-        }
-    }
-}
+
 
 input {
     margin-top: 10px;
@@ -427,25 +298,4 @@ input {
     height: 45px;
     border-radius: 22px;
     border: 1px solid white;
-}
-.btn {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 238px;
-    height: 45px;
-    border-radius: 22px;
-    background-color: #797979;
-    border: 1px solid #797979;
-    color: white;
-    font-size: 1.12rem;
-    &--bleu {
-        background-color: $colour-secondary;
-    }
-    &--vert {
-        background-color: $colour-primary;
-    }
 }

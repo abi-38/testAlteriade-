@@ -1,0 +1,26 @@
+.header {
+    background-image: url(../../public/img/imgHeader.png);
+    background-size: cover;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__container {
+        background-image: url(../../public/img/oval.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        height: 285px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > img {
+            width: 13vw;
+        }
+        > p {
+            padding-top: 25px;
+            color: $colour-primary;
+            font-weight: bold;
+        }
+    }
+}

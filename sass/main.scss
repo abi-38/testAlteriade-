@@ -3,4 +3,9 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/buttons";
+@import "./layout/nav";
+@import "./layout/header";
+@import "./layout/footer";
+
 @import "./pages/accueil.scss";

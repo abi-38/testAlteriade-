@@ -1,0 +1,27 @@
+.btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 238px;
+    height: 43px;
+    border-radius: 22px;
+    background-color: #797979;
+    border: 1px solid #797979;
+    color: white;
+    font-size: 1.12rem;
+    &--bleu {
+        background-color: $colour-secondary;
+    }
+    &--vert {
+        background-color: $colour-primary;
+    }
+    &--gris {
+        background-color: #f1f0f0;
+        color: $colour-secondary;
+        border: none;
+        margin-bottom: 10px;
+    }
+}
