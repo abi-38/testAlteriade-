@@ -33,7 +33,7 @@
             }
             &_reseaux {
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 > img.iconeReseau {
                     width: 3vw;
                     padding-right: 15px;
@@ -50,10 +50,10 @@
                 padding: 10px;
                 margin-right: 6vw;
                 margin-top: 50px;
-                align-items: end;
                 margin-left: 45vw;
                 > button {
                     margin-bottom: 60px;
+                    margin-left: 30vw;
                 }
                 > p, h2 {
                     color: white;

@@ -44,34 +44,6 @@
     }
 }
 
-.lightbox {
-    position: absolute;
-    width: 100vw;
-    height: 3045px;
-    background-color: rgba(0, 0, 0, 0.548);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__content {
-        width: 45vw;
-        height: auto;
-        background-color: white;
-        padding: 60px;
-        border-radius: 20px;
-        position: relative;
-        &__cross {
-            width: 10vw;
-            height: 10vw;
-            display: block;
-            background-color: red;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-    }
-}
-
 @media (min-width: 1700px){
     .header__container > img {
         width: 10vw;
