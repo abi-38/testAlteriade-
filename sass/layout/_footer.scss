@@ -25,6 +25,7 @@
                 }
             }
         }
+        /*1ère colonne*/
         &--moyenneTaille {
             width: 24vw;
             > img {
@@ -33,6 +34,7 @@
                 padding-right: 30px;
             }
         }
+        /*2éme colonne*/
         &--grandeTaille {
             width: 34vw;
             > img {
@@ -45,6 +47,7 @@
                 font-size: 0.875rem;
             }
         }
+        /*3éme colonne*/
         &--petiteTaille {
             flex-direction: column;
             justify-content: space-between;

@@ -1,10 +1,13 @@
+/*Carrousel*/
 #slideshow {
     position: relative;
     padding-top: 60px;
+    /*Titre section slider*/
     .container.container--slider {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        /*pour positionner le titre au-dessus du slider*/
         z-index: 1;
         position: absolute;
         width: 100vw;
@@ -22,15 +25,21 @@
         z-index: 1;
         color: white;
     }
+    /*Slider*/
     .slider {
         position: relative;
         .slider_items {
+            background-size: cover;
+            height:500px;
+            /*intégration image sur slide 1*/
             &#diapoUne {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee1.png);
             }
+            /*intégration image sur slide 2*/
             &#diapoDeux {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee2.png);
             }
+            /*intégration icônes RS*/
             &_reseaux {
                 display: flex;
                 justify-content: flex-end;
@@ -39,8 +48,6 @@
                     padding-right: 15px;
                 }
             }
-            background-size: cover;
-            height:500px;
             > div {
                 height: 395px;
                 display: flex;
@@ -74,6 +81,7 @@
     }
 }
 
+/*flèches du carrousel*/
 img.priv_arrow.slick-arrow {
     cursor: pointer;
     position: absolute;

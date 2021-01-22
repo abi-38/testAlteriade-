@@ -1,3 +1,4 @@
+/*Slider*/
 $(document).ready(() => {
   $('#slideshow .slider').slick({
     prevArrow: '<img class="priv_arrow" src="./public/img/prevArrow.png" alt="">',
@@ -5,6 +6,7 @@ $(document).ready(() => {
   });
 });
 
+/*Menu stické*/
 $(".nav-stick").hide();
 
 $(function () {
@@ -17,6 +19,7 @@ $(function () {
   })
 });   
 
+/*Lightbox*/
 const lightbox = document.createElement('div');
 lightbox.id = 'lightbox';
 document.body.appendChild(lightbox);
@@ -59,6 +62,7 @@ mentionsElt.addEventListener('click', e => {
   buttonElt.classList.add('btn--bleu');
   buttonElt.id = 'button-accepter';
   buttonElt.innerHTML = 'Accepter';
+  buttonElt.setAttribute('href', '#');
 
   /*Fermeture Ligthbox*/
   buttonElt.addEventListener('click', e => {

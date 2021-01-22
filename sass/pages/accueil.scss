@@ -1,9 +1,11 @@
 .section {
     padding-top: 60px;
+    /*Régle container général*/
     &__container {
         display: flex;
         padding-bottom: 30px;
         justify-content: center;
+        /*Régles complémentaires pour les lignes de la 1ère section*/
         &--right {
             justify-content: end;
         }
@@ -20,10 +22,12 @@
             }
         }
     }
+    /*Fond section nos engagements*/
     &--backgroundGrey {
         background-color: #f1f0f0;
         position: relative;
     }
+    /*Positionnement des 3 bulles de la section engagements*/
     &__bulle {
         position: absolute;
         &--un {

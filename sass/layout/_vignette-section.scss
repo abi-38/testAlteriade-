@@ -1,3 +1,4 @@
+/*sass des 6 vignettes de même taille*/
 .vignette {
     display: flex;
     flex-direction: column;
@@ -30,6 +31,7 @@
             object-fit: cover;
         }
     }
+    /*ajout des modificateur de la couleur de fond*/
     &--verte {
         background-color: $colour-accent;
     }
@@ -50,23 +52,24 @@
         opacity: 0.5;
     }
 }
+/*grande vignette carte du mois*/
 .vignette-carteDuMois {
     width: 49vw;
     height: 250px;
-    background-color: #f1f0f0;
+    background-color: $colour-complementary;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     &__container {
         display: flex;
         padding: 30px;
-        border-bottom: 1px solid #797979;
+        border-bottom: 1px solid $colour-other;
         > img {
             height: 60px;
             padding-right: 2vw;
         }
         > h2 {
-            color: #797979;
+            color: $colour-other;
         }
     }
     > p {
@@ -81,6 +84,7 @@
         opacity: 0.5;
     }
 }
+/*vignette de la 2éme ligne avec photo*/
 .vignette-image {
     width: 27.5vw;
     height: 250px;
@@ -99,6 +103,7 @@
         opacity: 0.5;
     }
 }
+/*vignette de la 3éme ligne avec grande photo*/
 .vignette-grandeImage {
     width: 62vw;
     height: 250px;
@@ -119,7 +124,7 @@
     }
 }
 
-
+/*Champ de saisie carte du mois*/
 input {
     margin-top: 10px;
     margin-left: 30px;
@@ -130,6 +135,7 @@ input {
     border: 1px solid white;
 }
 
+/*container du devis*/
 .container-devis {
     display: flex;
     justify-content: center;
@@ -139,7 +145,7 @@ input {
         margin-right: 2vw;
         margin-left: 37px;
         border-radius: 10px;
-        background-color: #f1f0f0;
+        background-color: $colour-complementary;
         overflow: hidden;
         display: flex;
         justify-content: space-around;

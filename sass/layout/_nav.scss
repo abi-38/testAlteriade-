@@ -1,3 +1,4 @@
+/*Menu classique*/
 .nav {
     display: flex;
     justify-content: space-between;
@@ -6,6 +7,7 @@
     background-color: rgba(242, 242, 242, 0.9);
     padding-right: 11vw;
     padding-left: 11vw;
+    /*liens onglets et points dessous*/
     &__link {
         text-decoration: none;
         display: flex;
@@ -19,6 +21,7 @@
             font-size: 1.313rem;
             color: $colour-third;
         }
+        /*Onglet "demandez un devis*/
         &--active {
             font-family: 'SourceSansPro-Bold', sans-serif;
             padding-bottom: 16px;
@@ -29,6 +32,7 @@
                 color: $colour-primary;
                 position: relative;
                 font-weight: bolder;
+                /*Ligne sous l'onglet*/
                 &::after {
                     background-color: $colour-primary;
                     content: "";
@@ -44,9 +48,12 @@
         }
     }
 }
+
+/*menu stické*/
 .nav-stick {
     position: fixed;
-    z-index: 1;
+    /*positionnement 2 important pour être au-dessus des flèches du carrousel*/
+    z-index: 2;
     width: 78vw;
     display: flex;
     justify-content: space-between;

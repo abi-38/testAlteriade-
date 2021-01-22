@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 *,
 *::after,
@@ -87,6 +88,7 @@ body, p {
   margin-bottom: 10px;
 }
 
+/*Menu classique*/
 .nav {
   display: flex;
   justify-content: space-between;
@@ -95,12 +97,14 @@ body, p {
   background-color: rgba(242, 242, 242, 0.9);
   padding-right: 11vw;
   padding-left: 11vw;
+  /*liens onglets et points dessous*/
 }
 .nav__link {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*Onglet "demandez un devis*/
 }
 .nav__link__img {
   width: 0.5vw;
@@ -121,6 +125,7 @@ body, p {
   color: #00ada9;
   position: relative;
   font-weight: bolder;
+  /*Ligne sous l'onglet*/
 }
 .nav__link--active > p::after {
   background-color: #00ada9;
@@ -134,9 +139,11 @@ body, p {
   width: 60px;
 }
 
+/*menu stické*/
 .nav-stick {
   position: fixed;
-  z-index: 1;
+  /*positionnement 2 important pour être au-dessus des flèches du carrousel*/
+  z-index: 2;
   width: 78vw;
   display: flex;
   justify-content: space-between;
@@ -193,6 +200,9 @@ body, p {
 .footer__div {
   display: flex;
   align-items: center;
+  /*1ère colonne*/
+  /*2éme colonne*/
+  /*3éme colonne*/
 }
 .footer__div > p, .footer__div > a {
   color: white;
@@ -241,14 +251,18 @@ body, p {
   padding-left: 15px;
 }
 
+/*Carrousel*/
 #slideshow {
   position: relative;
   padding-top: 60px;
+  /*Titre section slider*/
+  /*Slider*/
 }
 #slideshow .container.container--slider {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*pour positionner le titre au-dessus du slider*/
   z-index: 1;
   position: absolute;
   width: 100vw;
@@ -272,6 +286,9 @@ body, p {
 #slideshow .slider .slider_items {
   background-size: cover;
   height: 500px;
+  /*intégration image sur slide 1*/
+  /*intégration image sur slide 2*/
+  /*intégration icônes RS*/
 }
 #slideshow .slider .slider_items#diapoUne {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/actualitee1.png);
@@ -317,6 +334,7 @@ body, p {
   height: auto;
 }
 
+/*flèches du carrousel*/
 img.priv_arrow.slick-arrow {
   cursor: pointer;
   position: absolute;
@@ -333,6 +351,7 @@ img.next_arrow.slick-arrow {
   z-index: 1;
 }
 
+/*sass des 6 vignettes de même taille*/
 .vignette {
   display: flex;
   flex-direction: column;
@@ -343,6 +362,7 @@ img.next_arrow.slick-arrow {
   text-align: left;
   display: flex;
   justify-content: flex-end;
+  /*ajout des modificateur de la couleur de fond*/
 }
 .vignette > h2 {
   color: white;
@@ -386,6 +406,7 @@ img.next_arrow.slick-arrow {
   opacity: 0.5;
 }
 
+/*grande vignette carte du mois*/
 .vignette-carteDuMois {
   width: 49vw;
   height: 250px;
@@ -418,6 +439,7 @@ img.next_arrow.slick-arrow {
   opacity: 0.5;
 }
 
+/*vignette de la 2éme ligne avec photo*/
 .vignette-image {
   width: 27.5vw;
   height: 250px;
@@ -437,6 +459,7 @@ img.next_arrow.slick-arrow {
   opacity: 0.5;
 }
 
+/*vignette de la 3éme ligne avec grande photo*/
 .vignette-grandeImage {
   width: 62vw;
   height: 250px;
@@ -457,6 +480,7 @@ img.next_arrow.slick-arrow {
   opacity: 0.5;
 }
 
+/*Champ de saisie carte du mois*/
 input {
   margin-top: 10px;
   margin-left: 30px;
@@ -467,6 +491,7 @@ input {
   border: 1px solid white;
 }
 
+/*container du devis*/
 .container-devis {
   display: flex;
   justify-content: center;
@@ -541,11 +566,15 @@ input {
 
 .section {
   padding-top: 60px;
+  /*Régle container général*/
+  /*Fond section nos engagements*/
+  /*Positionnement des 3 bulles de la section engagements*/
 }
 .section__container {
   display: flex;
   padding-bottom: 30px;
   justify-content: center;
+  /*Régles complémentaires pour les lignes de la 1ère section*/
 }
 .section__container--right {
   justify-content: end;
