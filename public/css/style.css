@@ -329,52 +329,6 @@ img.next_arrow.slick-arrow {
   z-index: 1;
 }
 
-.section {
-  padding-top: 60px;
-}
-.section__container {
-  display: flex;
-  padding-bottom: 30px;
-  justify-content: center;
-}
-.section__container--right {
-  justify-content: end;
-}
-.section__container--left {
-  justify-content: start;
-}
-.section__container--titre {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section__container--titre > h1 {
-  padding-bottom: 20px;
-}
-.section--backgroundGrey {
-  background-color: #f1f0f0;
-  position: relative;
-}
-.section__bulle {
-  position: absolute;
-}
-.section__bulle--un {
-  position: absolute;
-  top: -25px;
-  left: 24vw;
-}
-.section__bulle--deux {
-  position: absolute;
-  top: 74px;
-  left: 84vw;
-}
-.section__bulle--trois {
-  position: absolute;
-  bottom: -20px;
-  left: 35vw;
-}
-
 .vignette {
   display: flex;
   flex-direction: column;
@@ -469,7 +423,7 @@ img.next_arrow.slick-arrow {
   position: relative;
 }
 .vignette-image > img {
-  width: 102%;
+  width: 137%;
   object-fit: cover;
   position: absolute;
   top: -26px;
@@ -497,6 +451,16 @@ img.next_arrow.slick-arrow {
 .vignette-grandeImage:hover {
   background-color: red;
   opacity: 0.5;
+}
+
+input {
+  margin-top: 10px;
+  margin-left: 30px;
+  padding-left: 10px;
+  width: 238px;
+  height: 45px;
+  border-radius: 22px;
+  border: 1px solid white;
 }
 
 .container-devis {
@@ -555,6 +519,52 @@ img.next_arrow.slick-arrow {
   color: #fcc300;
 }
 
+.section {
+  padding-top: 60px;
+}
+.section__container {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+.section__container--right {
+  justify-content: end;
+}
+.section__container--left {
+  justify-content: start;
+}
+.section__container--titre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__container--titre > h1 {
+  padding-bottom: 20px;
+}
+.section--backgroundGrey {
+  background-color: #f1f0f0;
+  position: relative;
+}
+.section__bulle {
+  position: absolute;
+}
+.section__bulle--un {
+  position: absolute;
+  top: -25px;
+  left: 24vw;
+}
+.section__bulle--deux {
+  position: absolute;
+  top: 74px;
+  left: 84vw;
+}
+.section__bulle--trois {
+  position: absolute;
+  bottom: -20px;
+  left: 35vw;
+}
+
 .lightbox {
   position: absolute;
   width: 100vw;
@@ -581,16 +591,6 @@ img.next_arrow.slick-arrow {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-input {
-  margin-top: 10px;
-  margin-left: 30px;
-  padding-left: 10px;
-  width: 238px;
-  height: 45px;
-  border-radius: 22px;
-  border: 1px solid white;
 }
 
 @media (min-width: 1700px) {

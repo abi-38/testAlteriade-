@@ -1,0 +1,29 @@
+.div-engagement {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 60px;
+    .article-engagement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        text-align: center;
+        margin-left: 22px;
+        margin-right: 22px;
+        width: 20vw;
+        > img {
+            width: 27%;
+            padding-bottom: 15px;
+        }
+        &--bold {
+            font-family: 'DINBlackAlternate', Arial, serif;
+            font-size: 1.125rem;
+            padding-top: 9px;
+        }
+        &--yellow {
+            color: $colour-first;
+        }
+    }
+}
