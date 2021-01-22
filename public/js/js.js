@@ -62,7 +62,6 @@ mentionsElt.addEventListener('click', e => {
   buttonElt.classList.add('btn--bleu');
   buttonElt.id = 'button-accepter';
   buttonElt.innerHTML = 'Accepter';
-  buttonElt.setAttribute('href', '#');
 
   /*Fermeture Ligthbox*/
   buttonElt.addEventListener('click', e => {
